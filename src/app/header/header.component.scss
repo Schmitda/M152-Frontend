@@ -1,0 +1,27 @@
+@import "../../styles";
+
+nav {
+  display: grid;
+  grid-template-columns: auto auto;
+}
+
+.right {
+  justify-self: flex-end;
+  display: flex;
+}
+
+.navigation-item a {
+  padding: 10px;
+  display: inline-block;
+  color: white;
+  text-decoration: none;
+}
+
+header {
+  background-color: $primaryColor;
+  box-shadow: 2px 2px 2px lightgray;
+}
+
+.navigation-item a:hover {
+  background-color: orange;
+}
