@@ -1,10 +1,11 @@
 import {NgModule} from '@angular/core';
-import {Routes, RouterModule} from '@angular/router';
-import {DashboardComponent} from "./dashboard/dashboard.component";
-import {ImageGalleryComponent} from "./image-gallery/image-gallery.component";
-import {VideoGalleryComponent} from "./video-gallery/video-gallery.component";
-import {AudioListComponent} from "./audio-list/audio-list.component";
-import {ChatComponent} from "./chat/chat.component";
+import {RouterModule, Routes} from '@angular/router';
+import {DashboardComponent} from './dashboard/dashboard.component';
+import {ImageGalleryComponent} from './image-gallery/image-gallery.component';
+import {VideoGalleryComponent} from './video-gallery/video-gallery.component';
+import {AudioListComponent} from './audio-list/audio-list.component';
+import {ChatComponent} from './chat/chat.component';
+import {WebchatComponent} from './webchat/webchat.component';
 
 const routes: Routes = [
   {
@@ -31,6 +32,10 @@ const routes: Routes = [
   {
     path: 'chat',
     component: ChatComponent
+  },
+  {
+    path: 'webchat',
+    component: WebchatComponent
   },
   {
     path: '**',
